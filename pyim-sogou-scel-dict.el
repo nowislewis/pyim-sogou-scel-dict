@@ -27,7 +27,7 @@
   "Add sogou scel dict to pyim."
   (interactive)
   (let* ((dir (file-name-directory
-               (locate-library "pyim-sgou-scel-dict.el")))
+               (locate-library "pyim-sogou-scel-dict.el")))
          (file (concat dir "pyim-sogou-scel-dict.pyim")))
     (when (file-exists-p file)
       (if (featurep 'pyim-dict)
@@ -35,6 +35,6 @@
            `(:name "pyim-sogou-scel-dict" :file ,file))
         (message "pyim 没有安装，pyim-sogou-scel-dict 启用失败。")))))
 
-(provide 'pyim-tsinghua-dict)
+(provide 'pyim-sogou-scel-dict)
 
-;;; pyim-tsinghua-dict.el ends here
+;;; pyim-pyim-sogou-scel-dict.el ends here
