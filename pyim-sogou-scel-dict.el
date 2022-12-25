@@ -32,9 +32,10 @@
     (when (file-exists-p file)
       (if (featurep 'pyim-dict)
           (pyim-extra-dicts-add-dict
-           `(:name "pyim-sogou-scel-dict" :file ,file))
+           `(:name "pyim-sogou-scel-dict" :file ,file :elpa t))
         (message "pyim 没有安装，pyim-sogou-scel-dict 启用失败。")))))
 
 (provide 'pyim-sogou-scel-dict)
 
+;;
 ;;; pyim-pyim-sogou-scel-dict.el ends here
